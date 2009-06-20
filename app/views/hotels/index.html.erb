@@ -4,12 +4,16 @@
   <tr>
     <th>Nome</th>
     <th>Cidade</th>
+    <th>Endereço</th>
+    <th>Telefone</th>
   </tr>
 
 <% @hotels.each do |hotel| %>
   <tr>
     <td><%=h hotel.nome %></td>
-    <td><%=h hotel.cidade %></td>
+    <td><%=h hotel.cidade.nome %></td>
+    <td><%=h hotel.endereco %></td>
+    <td><%=h hotel.telefone %></td>
     <td><%= link_to 'Show', hotel %></td>
     <td><%= link_to 'Edit', edit_hotel_path(hotel) %></td>
     <td><%= link_to 'Destroy', hotel, :confirm => 'Are you sure?', :method => :delete %></td>

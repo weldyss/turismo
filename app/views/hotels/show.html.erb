@@ -5,9 +5,17 @@
 
 <p>
   <b>Cidade:</b>
-  <%=h @hotel.cidade %>
+  <%=h @hotel.cidade.nome %>
 </p>
 
+<p>
+  <b>Endereço:</b>
+  <%=h @hotel.endereco %>
+</p>
+<p>
+  <b>Telefone:</b>
+  <%=h @hotel.telefone %>
+</p>
 
 <%= link_to 'Edit', edit_hotel_path(@hotel) %> |
 <%= link_to 'Back', hotels_path %>
