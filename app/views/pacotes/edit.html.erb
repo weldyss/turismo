@@ -1,0 +1,28 @@
+<h1>Editing pacote</h1>
+
+<% form_for(@pacote) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :quantidade_de_pessoas %><br />
+    <%= f.text_field :quantidade_de_pessoas %>
+  </p>
+  <p>
+    <%= f.label :valor %><br />
+    <%= f.text_field :valor %>
+  </p>
+  <p>
+    <%= f.label :transporte %><br />
+    <%= f.text_field :transporte %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @pacote %> |
+<%= link_to 'Back', pacotes_path %>

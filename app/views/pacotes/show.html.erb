@@ -1,0 +1,23 @@
+<p>
+  <b>Nome:</b>
+  <%=h @pacote.nome %>
+</p>
+
+<p>
+  <b>Quantidade de pessoas:</b>
+  <%=h @pacote.quantidade_de_pessoas %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%=h @pacote.valor %>
+</p>
+
+<p>
+  <b>Transporte:</b>
+  <%=h @pacote.transporte %>
+</p>
+
+
+<%= link_to 'Edit', edit_pacote_path(@pacote) %> |
+<%= link_to 'Back', pacotes_path %>
