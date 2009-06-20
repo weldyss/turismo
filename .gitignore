@@ -1,4 +1,3 @@
-config/database.yml
 config/sphinx.yml
 config/*.sphinx.conf
 config/test.sphinx.conf
