@@ -1,0 +1,22 @@
+<h1>Listing hotels</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Cidade</th>
+  </tr>
+
+<% @hotels.each do |hotel| %>
+  <tr>
+    <td><%=h hotel.nome %></td>
+    <td><%=h hotel.cidade %></td>
+    <td><%= link_to 'Show', hotel %></td>
+    <td><%= link_to 'Edit', edit_hotel_path(hotel) %></td>
+    <td><%= link_to 'Destroy', hotel, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New hotel', new_hotel_path %>

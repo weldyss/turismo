@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :hotels
   map.resources :cidades
 
   # The priority is based upon order of creation: first created -> highest priority.

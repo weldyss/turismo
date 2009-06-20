@@ -1,0 +1,13 @@
+<p>
+  <b>Nome:</b>
+  <%=h @hotel.nome %>
+</p>
+
+<p>
+  <b>Cidade:</b>
+  <%=h @hotel.cidade %>
+</p>
+
+
+<%= link_to 'Edit', edit_hotel_path(@hotel) %> |
+<%= link_to 'Back', hotels_path %>
