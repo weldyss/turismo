@@ -1,9 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-
-
-
   map.resources :pacotes
-
   map.resources :hotels
   map.resources :cidades
   map.resources :locals
