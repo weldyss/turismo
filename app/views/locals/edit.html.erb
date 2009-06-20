@@ -1,0 +1,16 @@
+<h1>Editing local</h1>
+
+<% form_for(@local) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :local %><br />
+    <%= f.text_field :local %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @local %> |
+<%= link_to 'Back', locals_path %>

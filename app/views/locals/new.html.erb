@@ -1,0 +1,19 @@
+<h1>New local</h1>
+
+<% form_for(@local) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+      <%= f.label :cidade_id %><br />
+      <%= f.select :cidade_id, Cidade.all.collect {|p| [ p.nome, p.id ] }  %>
+    </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', locals_path %>

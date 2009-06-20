@@ -1,9 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
+
+
+
   map.resources :pacotes
 
   map.resources :hotels
   map.resources :cidades
-
+  map.resources :locals
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

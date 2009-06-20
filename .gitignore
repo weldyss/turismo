@@ -9,3 +9,4 @@ tmp/*
 *~
 *.tmproj
 public/*.html
+db/development.sqlite3
