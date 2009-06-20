@@ -8,9 +8,9 @@
     <%= f.text_field :nome %>
   </p>
   <p>
-      <%= f.label :cidade_id %><br />
-      <%= f.select :cidade_id, Cidade.all.collect {|p| [ p.nome, p.id ] }  %>
-    </p>
+    <%= f.label :cidade_id %><br />
+    <%= f.select :cidade_id, Cidade.all.collect {|p| [ p.nome, p.id ] }  %>
+  </p>
   <p>
     <%= f.submit 'Create' %>
   </p>

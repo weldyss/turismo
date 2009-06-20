@@ -26,6 +26,27 @@
   </p>
   
   <p>
+    <%= f.label :refeicao, "Refeição" %><br />
+    <select<select name="pacote[refeicao]" id="pacote[refeicao]">
+      <option>-- Selecione --</option>
+      <option value="Somente café">Somente café</option>
+      <option value="Café e almoço">Café e almoço</option>
+      
+    </select>
+  </p>
+  
+  <p>
+    <%= f.label :refeicao, "Tipo de locomoção" %><br />
+    <select<select name="pacote[locomocao]" id="pacote[locomocao]">
+      <option>-- Selecione --</option>
+      <option value="Somente café">Guia turístico e ônibus</option>
+      <option value="Café e almoço">Somente ônibus</option>
+      <option value="Café e almoço">Somente guia</option>
+      
+    </select>
+  </p>
+  
+  <p>
     <%= f.submit 'Create' %>
   </p>
 <% end %>
