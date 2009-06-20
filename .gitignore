@@ -1,0 +1,12 @@
+config/database.yml
+config/sphinx.yml
+config/*.sphinx.conf
+config/test.sphinx.conf
+db/schema.rb
+db/migrations/*
+db/sphinx/*
+log/*
+tmp/*
+*~
+*.tmproj
+public/*.html
