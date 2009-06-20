@@ -1,0 +1,7 @@
+<% fields_for "pacote[trajeto_attributes][]", trajeto do |t| %>
+  <p>
+    <%= t.label :Trajeto %><br />
+    <%= t.select :cidade_id, Cidade.all.collect {|p| [ p.nome, p.id ] }  %>
+    <%= link_to_function "delete", "remove_field($(this), ('.trajeto'))" %>
+  </p>
+<% end %>
