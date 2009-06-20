@@ -6,6 +6,7 @@
     <th>Quantidade de dias</th>
     <th>Valor</th>
     <th>Transporte</th>
+    <th>Descrição</th>
   </tr>
 
 <% @pacotes.each do |pacote| %>
@@ -14,6 +15,7 @@
     <td><%=h pacote.quantidade_de_pessoas %></td>
     <td><%=h pacote.valor %></td>
     <td><%=h pacote.transporte %></td>
+    <td><%=h pacote.descricao %></td>
     <td><%= link_to 'Show', pacote %></td>
     <td><%= link_to 'Edit', edit_pacote_path(pacote) %></td>
     <td><%= link_to 'Destroy', pacote, :confirm => 'Are you sure?', :method => :delete %></td>

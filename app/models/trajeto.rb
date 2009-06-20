@@ -1,3 +1,3 @@
 class Trajeto < ActiveRecord::Base
-  belongs_to :pacotes
+  belongs_to :pacote
 end
