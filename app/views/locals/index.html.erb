@@ -2,12 +2,14 @@
 
 <table>
   <tr>
-    <th>String</th>
+    <th>Nome</th>
+    <th>Cidade</th>
   </tr>
 
 <% @locals.each do |local| %>
   <tr>
-    <td><%=h local.string %></td>
+    <td><%=h local.nome %></td>
+    <td><%=h local.cidade.nome %></td>
     <td><%= link_to 'Show', local %></td>
     <td><%= link_to 'Edit', edit_local_path(local) %></td>
     <td><%= link_to 'Destroy', local, :confirm => 'Are you sure?', :method => :delete %></td>

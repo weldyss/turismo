@@ -4,9 +4,14 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :local %><br />
-    <%= f.text_field :local %>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
   </p>
+  <p>
+      <%= f.label :cidade_id %><br />
+      <%= f.select :cidade_id, Cidade.all.collect {|p| [ p.nome, p.id ] }  %>
+    </p>
+  
   <p>
     <%= f.submit 'Update' %>
   </p>
