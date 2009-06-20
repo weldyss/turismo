@@ -20,6 +20,11 @@
     <%= f.text_field :transporte %>
   </p>
   <p>
+      <%= f.label :trajeto %><br />
+      <%= f.radio_button :trajeto_id, Trajeto.all.collect {|p| [ p.nome, p.id ] }  %>
+ </p>
+  
+  <p>
     <%= f.submit 'Create' %>
   </p>
 <% end %>
