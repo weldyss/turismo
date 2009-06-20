@@ -1,4 +1,5 @@
 class PacotesController < ApplicationController
+  layout "layout"
   # GET /pacotes
   # GET /pacotes.xml
   def index

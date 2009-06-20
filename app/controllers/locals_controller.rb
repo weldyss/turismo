@@ -1,6 +1,6 @@
 class LocalsController < ApplicationController
   
-    layout "layout"
+  layout "layout"
   # GET /locals
   # GET /locals.xml
   def index

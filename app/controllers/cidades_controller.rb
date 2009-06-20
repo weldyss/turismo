@@ -1,4 +1,5 @@
 class CidadesController < ApplicationController
+  layout "layout"
   # GET /cidades
   # GET /cidades.xml
   def index
