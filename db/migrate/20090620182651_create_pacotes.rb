@@ -2,7 +2,7 @@ class CreatePacotes < ActiveRecord::Migration
   def self.up
     create_table :pacotes do |t|
       t.string :nome
-      t.integer :quantidade_de_pessoas
+      t.integer :quantidade_de_dias
       t.float :valor
       t.string :transporte
 
